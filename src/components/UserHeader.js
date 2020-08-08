@@ -10,7 +10,12 @@ class UserHeader extends React.Component{
         if(!user){
             return null;
         }
-        return<div> {user.email} </div>
+        return(
+        <div> 
+            {user.name}(
+            {user.email},
+            address:{user.address.zipcode})
+        </div>)
     }
 };
 
